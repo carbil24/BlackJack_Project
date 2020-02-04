@@ -253,6 +253,8 @@ namespace BlackJack_Final_Project
             ShowPlayerHand();
             ShowDealerHand();
 
+
+
             if (player.GetHandValue() > 21)
             {
                 CheckResult();
