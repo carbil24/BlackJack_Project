@@ -83,7 +83,11 @@ namespace BlackJack_Final_Project
 
         protected void btn1_Click(object sender, EventArgs e)
         {
-            currentBet += 1;
+            if(currentBet <= player.Chips -1)
+            {
+                currentBet += 1;
+
+            }
             lblBetValue.Text = currentBet.ToString();
             btnBet.Visible = true;
             btnEndGame.Visible = false;
@@ -93,7 +97,10 @@ namespace BlackJack_Final_Project
 
         protected void btn5_Click(object sender, EventArgs e)
         {
-            currentBet += 5;
+            if (currentBet <= player.Chips -5)
+            {
+                currentBet += 5;
+            }
             lblBetValue.Text = currentBet.ToString();
             btnBet.Visible = true;
             btnEndGame.Visible = false;
@@ -104,7 +111,10 @@ namespace BlackJack_Final_Project
 
         protected void btn25_Click(object sender, EventArgs e)
         {
-            currentBet += 25;
+            if (currentBet <= player.Chips -25)
+            {
+                currentBet += 25;
+            }
             lblBetValue.Text = currentBet.ToString();
             btnBet.Visible = true;
             btnEndGame.Visible = false;
@@ -114,7 +124,12 @@ namespace BlackJack_Final_Project
 
         protected void btn50_Click(object sender, EventArgs e)
         {
-            currentBet += 50;
+            if (currentBet <= player.Chips -50)
+            {
+                currentBet += 50;
+
+
+            }
             lblBetValue.Text = currentBet.ToString();
             btnBet.Visible = true;
             btnEndGame.Visible = false;
@@ -124,7 +139,12 @@ namespace BlackJack_Final_Project
 
         protected void btn100_Click(object sender, EventArgs e)
         {
-            currentBet += 100;
+            if (currentBet <= player.Chips -100 )
+            {
+                currentBet += 100;
+
+
+            }
             lblBetValue.Text = currentBet.ToString();
             btnBet.Visible = true;
             btnEndGame.Visible = false;
@@ -134,7 +154,12 @@ namespace BlackJack_Final_Project
 
         protected void btn500_Click(object sender, EventArgs e)
         {
-            currentBet += 500;
+            if (currentBet <= player.Chips -500)
+            {
+                currentBet += 500;
+
+
+            }
             lblBetValue.Text = currentBet.ToString();
             btnBet.Visible = true;
             btnEndGame.Visible = false;

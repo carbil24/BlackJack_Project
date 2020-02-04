@@ -104,7 +104,7 @@ namespace BlackJack_Final_Project
             btnStand.Visible = false;
         }
 
-        //It shows the player's card
+        //It shows the player's cards
         public void ShowPlayerHand()
         {
             int degree = -25;
@@ -131,7 +131,7 @@ namespace BlackJack_Final_Project
             }
         }
 
-        //It shows the delaer's card
+        //It shows the delaer's cards
         public void ShowDealerHand()
         {
             int degree = -25;
@@ -252,7 +252,6 @@ namespace BlackJack_Final_Project
 
             ShowPlayerHand();
             ShowDealerHand();
-
 
 
             if (player.GetHandValue() > 21)
