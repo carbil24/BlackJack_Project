@@ -150,7 +150,6 @@ namespace BlackJack_Final_Project
                 li.Attributes.Add("class", "overlap");
                 //li.InnerText = card.PictureURL;
                 dealerCards.Controls.Add(li);
-
             }
 
             for (int i = 0; i < dealer.HiddenCards.Count; i++)
